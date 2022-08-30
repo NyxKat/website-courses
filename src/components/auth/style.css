@@ -1,0 +1,62 @@
+.my-form{
+    height: calc(100vh - 120px);
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.my-form form{
+    width: 100% !important;
+}
+
+.my-form form h1{
+    color: #333 !important;
+}
+
+.my-form form label{
+    font-weight: 300 !important;
+}
+
+.my-form form input::placeholder{
+    color: #ccc !important;
+    font-weight: 300;
+}
+
+.redirect-link{
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.redirect-link:hover{
+    text-decoration: underline;
+}
+
+.my-form form button{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+
+@media(max-width: 860px){
+    .my-form{
+        width: 70%;
+    }
+
+    .my-form form h1{
+        font-size: 1.8rem;
+    }
+    
+    .redirect-link{
+        font-size: 1.2rem;
+    }
+
+    .my-form form label{
+        font-size: 1.2rem;
+    }
+}
